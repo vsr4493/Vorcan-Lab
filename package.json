@@ -1,0 +1,19 @@
+{
+  "name": "App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^2.4.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "semantic-ui-react": "^0.71.3"
+  }
+}
