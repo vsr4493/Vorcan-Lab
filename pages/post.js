@@ -3,11 +3,14 @@ import fetch from 'isomorphic-unfetch';
 import Prismic from 'prismic-javascript';
 import {ApiConfig} from '../config/index';
 import {translateError} from '../utils/index';
+import {AppLayout} from '../components/index';
 import {Post as PostComponent} from '../components/index';
 
 const Post = ({post}) => {
 	return (
-			<PostComponent post = {post} />
+			<AppLayout>
+				<PostComponent post = {post} />
+			</AppLayout>
 	);
 }
 

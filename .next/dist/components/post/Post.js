@@ -13,7 +13,7 @@ var _semanticUiReact = require("semantic-ui-react");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "E:\\Design Lab\\projects\\vorcan\\App\\components\\post\\Post.js";
+var _jsxFileName = "/home/vorcan/Vorcan/Vorcan.me/components/post/Post.js";
 
 
 var PostHeader = function PostHeader(_ref) {

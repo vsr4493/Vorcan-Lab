@@ -21,6 +21,7 @@
     "semantic-ui-react": "^0.71.3"
   },
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "eslint": "^4.3.0",
     "eslint-config-google": "^0.9.1"
   }

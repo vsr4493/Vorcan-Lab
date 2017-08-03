@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import {Grid,Header, Menu} from 'semantic-ui-react'
-
-const Slogan = () => (
-	<Header style={gridStyles} as='h1' textAlign='center'>Vorcan's Labratory</Header>
-);
+import Slogan from './Slogan'; 
 
 const gridStyles = {
-	padding: "20px 10px" 
+	padding: "10px 5px" 
 }
 
 const PostLink = ({id, title}) => (
@@ -14,6 +11,7 @@ const PostLink = ({id, title}) => (
 		<Menu.Item name={title} />
 	</Link>
 ) 
+
 	
 const LinkMenu = ({activeItem}) => (
 	<Grid>
@@ -38,7 +36,7 @@ const LinkMenu = ({activeItem}) => (
 );
 
 const AppHeader = (props) => (
-	<Grid celled >
+	<Grid celled padded>
 		<Grid.Row>
 			<Grid.Column width={7}>
 				<Slogan />

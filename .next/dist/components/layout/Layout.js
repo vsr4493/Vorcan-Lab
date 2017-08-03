@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AppLayout = undefined;
 
-var _link = require('next\\dist\\lib\\link.js');
+var _link = require('next/dist/lib/link.js');
 
 var _link2 = _interopRequireDefault(_link);
 
-var _head = require('next\\dist\\lib\\head.js');
+var _head = require('next/dist/lib/head.js');
 
 var _head2 = _interopRequireDefault(_head);
 
@@ -23,7 +23,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\layout\\Layout.js';
+var _jsxFileName = '/home/vorcan/Vorcan/Vorcan.me/components/layout/Layout.js';
 
 
 var AppLayout = function AppLayout(props) {
