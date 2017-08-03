@@ -9,6 +9,12 @@ const gridStyles = {
 	padding: "20px 10px" 
 }
 
+const PostLink = ({id, title}) => (
+	<Link href={`/post?id=${id}`}>
+		<Menu.Item name={title} />
+	</Link>
+) 
+	
 const LinkMenu = ({activeItem}) => (
 	<Grid>
 		<Grid.Row>
@@ -20,6 +26,7 @@ const LinkMenu = ({activeItem}) => (
 					<Link href="/about">
 						<Menu.Item name='About' active={activeItem === 'about'}/>
 					</Link>
+					<PostLink id="WYDchioAAHuWrCAF" title="Hello World"/>
 				</Menu>
 			</Grid.Column>
 			<Grid.Column width={6}>

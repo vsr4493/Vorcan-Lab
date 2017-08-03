@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.3",
+    "isomorphic-unfetch": "^2.0.0",
     "next": "^2.4.8",
     "prismic-dom": "^1.2.8",
     "prismic-javascript": "^1.1.5",
