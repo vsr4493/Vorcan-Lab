@@ -20,4 +20,15 @@ const transform = {
 	transformOrigin: "bottom left",
 }
 
-export {outer, inner, transform};
+const triangleRight = {
+	position:"absolute",
+	top:2,
+	left:"20%",
+	width: 0,
+	height: 0,
+	borderTop: "85px solid transparent",
+	borderRight: "172px solid #888",
+	borderBottom: "0px solid transparent"
+}
+
+export {outer, inner, triangleRight, transform};
