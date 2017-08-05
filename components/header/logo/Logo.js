@@ -1,15 +1,10 @@
 import {Header} from 'semantic-ui-react';
-import * as style from './styles';
-
-const Facade = () => (
-	<div style={style.facadeOuter}>
-		<div style={style.facadeInner}></div>
-	</div>
-);
+import * as styles from './styles';
+import {Facade} from '../common/index';
 
 const Logo = () => (
 	<div>
-	<Header as='h1' textAlign='center' style={style.container} >
+	<Header as='h1' textAlign='center' style={styles.container} >
 		<Facade/>
 		<Header.Content>
 				<sup>Vorcan's</sup>

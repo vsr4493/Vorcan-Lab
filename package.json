@@ -21,6 +21,7 @@
     "semantic-ui-react": "^0.71.3"
   },
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "css-loader": "^0.28.4",
     "eslint": "^4.3.0",
     "eslint-config-google": "^0.9.1"
