@@ -50,7 +50,7 @@ var AppLayout = function AppLayout(props) {
 			fileName: _jsxFileName,
 			lineNumber: 12
 		}
-	})), _react2.default.createElement(_semanticUiReact.Container, { fluid: true, __source: {
+	})), _react2.default.createElement(_semanticUiReact.Container, { fluid: true, style: { padding: "5px" }, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 14
 		}

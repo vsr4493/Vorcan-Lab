@@ -11,7 +11,7 @@ const AppLayout = (props) => (
 			<meta name="viewport" content="initial-scale=1.0 width=device-width"/>
 			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css"></link>
 		</Head>
-		<Container fluid>
+		<Container fluid style={{padding:"5px"}}>
 			<AppHeader/>
 			{props.children}
 		</Container>	

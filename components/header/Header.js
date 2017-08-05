@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {Grid,Header, Menu} from 'semantic-ui-react'
-import Slogan from './Slogan'; 
+import Logo from './logo/Logo'; 
 
 const gridStyles = {
 	padding: "10px 5px" 
@@ -17,7 +17,7 @@ const LinkMenu = ({activeItem}) => (
 	<Grid>
 		<Grid.Row>
 			<Grid.Column width={6}>
-				<Menu vertical>
+				<Menu Horizontal>
 					<Link href="/">
 						<Menu.Item name='Home' active={activeItem === 'home'}/>
 					</Link>
@@ -27,21 +27,17 @@ const LinkMenu = ({activeItem}) => (
 					<PostLink id="WYDchioAAHuWrCAF" title="Hello World"/>
 				</Menu>
 			</Grid.Column>
-			<Grid.Column width={6}>
-				<Menu vertical>
-				</Menu>
-			</Grid.Column>
 		</Grid.Row>
 	</Grid>
 );
 
 const AppHeader = (props) => (
-	<Grid celled padded>
-		<Grid.Row>
-			<Grid.Column width={7}>
-				<Slogan />
+	<Grid padded stretched style={{}}>
+		<Grid.Row stretched>
+			<Grid.Column width={2}>
+				<Logo />
 			</Grid.Column>
-			<Grid.Column width={9}>
+			<Grid.Column width={14}>
 				<LinkMenu activeIte
 				m = {props.activeItem} />
 			</Grid.Column>

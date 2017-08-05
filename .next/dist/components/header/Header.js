@@ -15,9 +15,9 @@ var _link2 = _interopRequireDefault(_link);
 
 var _semanticUiReact = require('semantic-ui-react');
 
-var _Slogan = require('./Slogan');
+var _Logo = require('./logo/Logo');
 
-var _Slogan2 = _interopRequireDefault(_Slogan);
+var _Logo2 = _interopRequireDefault(_Logo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58,7 +58,7 @@ var LinkMenu = function LinkMenu(_ref2) {
 			fileName: _jsxFileName,
 			lineNumber: 19
 		}
-	}, _react2.default.createElement(_semanticUiReact.Menu, { vertical: true, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Menu, { Horizontal: true, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 20
 		}
@@ -82,44 +82,35 @@ var LinkMenu = function LinkMenu(_ref2) {
 			fileName: _jsxFileName,
 			lineNumber: 27
 		}
-	}))), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 6, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 30
-		}
-	}, _react2.default.createElement(_semanticUiReact.Menu, { vertical: true, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 31
-		}
-	}))));
+	})))));
 };
 
 var AppHeader = function AppHeader(props) {
-	return _react2.default.createElement(_semanticUiReact.Grid, { celled: true, padded: true, __source: {
+	return _react2.default.createElement(_semanticUiReact.Grid, { padded: true, stretched: true, style: {}, __source: {
 			fileName: _jsxFileName,
-			lineNumber: 39
+			lineNumber: 35
 		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Row, {
+	}, _react2.default.createElement(_semanticUiReact.Grid.Row, { stretched: true, __source: {
+			fileName: _jsxFileName,
+			lineNumber: 36
+		}
+	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 2, __source: {
+			fileName: _jsxFileName,
+			lineNumber: 37
+		}
+	}, _react2.default.createElement(_Logo2.default, {
 		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 38
+		}
+	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 14, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 40
-		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 7, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 41
-		}
-	}, _react2.default.createElement(_Slogan2.default, {
-		__source: {
-			fileName: _jsxFileName,
-			lineNumber: 42
-		}
-	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 9, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 44
 		}
 	}, _react2.default.createElement(LinkMenu, { activeIte: true,
 		m: props.activeItem, __source: {
 			fileName: _jsxFileName,
-			lineNumber: 45
+			lineNumber: 41
 		}
 	}))));
 };
