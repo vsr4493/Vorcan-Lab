@@ -1,9 +1,11 @@
 const container =  {
 	grid: {
-		padding:"15px 15px"
+		marginBottom:"0px",
+		backgroundColor:"#FFF056"
 	},
 	row: {
-		paddingTop:"0px"
+		paddingTop:"10px",
+		paddingBottom:"0px"
 	}
 }
 

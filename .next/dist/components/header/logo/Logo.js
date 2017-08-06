@@ -23,13 +23,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\header\\logo\\Logo.js';
 
 
-var Logo = function Logo() {
+var Logo = function Logo(_ref) {
+	var toggleSidebar = _ref.toggleSidebar;
 	return _react2.default.createElement('div', {
 		__source: {
 			fileName: _jsxFileName,
 			lineNumber: 6
 		}
-	}, _react2.default.createElement(_semanticUiReact.Header, { as: 'h1', textAlign: 'center', style: styles.container, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Header, { as: 'h1', style: styles.container, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 7
 		}
@@ -43,15 +44,32 @@ var Logo = function Logo() {
 			fileName: _jsxFileName,
 			lineNumber: 9
 		}
+	}, _react2.default.createElement(_semanticUiReact.Button, { icon: true, onClick: toggleSidebar, __source: {
+			fileName: _jsxFileName,
+			lineNumber: 10
+		}
 	}, _react2.default.createElement('sup', {
 		__source: {
 			fileName: _jsxFileName,
-			lineNumber: 10
+			lineNumber: 11
+		}
+	}, _react2.default.createElement(_semanticUiReact.Icon, { size: 'large', inverted: true, name: 'content', __source: {
+			fileName: _jsxFileName,
+			lineNumber: 12
+		}
+	})))), _react2.default.createElement(_semanticUiReact.Header.Content, { style: { marginLeft: "10px" }, __source: {
+			fileName: _jsxFileName,
+			lineNumber: 16
+		}
+	}, _react2.default.createElement('sup', {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 17
 		}
 	}, 'Vorcan\'s'), _react2.default.createElement('sub', {
 		__source: {
 			fileName: _jsxFileName,
-			lineNumber: 11
+			lineNumber: 18
 		}
 	}, 'Lab'))));
 };

@@ -1,8 +1,10 @@
 const container = {
-	marginLeft:"-14px",
+	marginLeft:"0px",
 	borderRadius:"0px",
-	height:"60px",
-	border:"0px"
+	border:"0px",
+	background:"transparent",
+	boxShadow:"none",
+	float:"right"
 };
 
 const menuItem = {

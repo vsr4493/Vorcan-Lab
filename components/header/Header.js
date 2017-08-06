@@ -6,11 +6,11 @@ import * as styles from './styles';
 const AppHeader = (props) => (
 	<Grid stretched style={styles.container.grid}>
 		<Grid.Row stretched style={styles.container.row}>
-			<Grid.Column width={3}>
-				<Logo />
+			<Grid.Column width={4}>
+				<Logo toggleSidebar = {props.toggleSidebar}/>
 			</Grid.Column>
-			<Grid.Column width={13}>
-				<Navbar activeItem = {props.activeItem} />
+			<Grid.Column width={12}>
+				<Navbar links = {props.links} activeLink = {props.activeLink} />
 			</Grid.Column>
 		</Grid.Row>
 	</Grid>

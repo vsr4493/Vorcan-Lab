@@ -1,27 +1,23 @@
-import {Grid,Header, Menu} from 'semantic-ui-react';
+import {Grid,Header, Menu, Segment, Button} from 'semantic-ui-react';
 import * as styles from './styles';
 import Link from 'next/link';
 import {Facade} from '../common/index';
 
-const PostLink = ({id, title}) => (
-	<Link href={`/post?id=${id}`}>
-		<Menu.Item name={title} />
-	</Link>
-) 
-
-
 const MenuItem = ({href,title,activeItem}) => (
-	<Link href={href}>
-		<Menu.Item name={title} active={activeItem === title}>
-			{title}
+		<Menu.Item name={title} size="large" active={activeItem === title}>
+			<Link href={href}>
+				<Button basic color="black">{title}</Button>
+			</Link>
 		</Menu.Item>
-	</Link>
 );
 
-const Navbar = ({activeItem}) => (
-	<Menu borderless fluid widths={2}  style={styles.container}>
-		<MenuItem href="/" title="home" activeItem={activeItem} />
-		<PostLink id="WYDchioAAHuWrCAF" title="Hello World"/>
+const Navbar = ({activeLink, links}) => (
+	<Menu borderless style={styles.container}>
+		{
+			links.map((link,index) => 
+					<MenuItem  href={link.url} key={index} title={link.title} activeItem={link.title == activeLink} />
+			)
+		}
 	</Menu>
 );
 

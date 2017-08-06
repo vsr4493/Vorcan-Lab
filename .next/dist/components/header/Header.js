@@ -39,20 +39,19 @@ var AppHeader = function AppHeader(props) {
 			fileName: _jsxFileName,
 			lineNumber: 8
 		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 3, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 4, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 9
 		}
-	}, _react2.default.createElement(_Logo2.default, {
-		__source: {
+	}, _react2.default.createElement(_Logo2.default, { toggleSidebar: props.toggleSidebar, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 10
 		}
-	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 13, __source: {
+	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 12, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 12
 		}
-	}, _react2.default.createElement(_Navbar2.default, { activeItem: props.activeItem, __source: {
+	}, _react2.default.createElement(_Navbar2.default, { links: props.links, activeLink: props.activeLink, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 13
 		}

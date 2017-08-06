@@ -33,10 +33,6 @@ var Facade = function Facade() {
 			fileName: _jsxFileName,
 			lineNumber: 5
 		}
-	}), _react2.default.createElement('div', { style: styles.triangleRight, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 6
-		}
 	}));
 };
 

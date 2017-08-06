@@ -14,29 +14,17 @@ var outer = {
 };
 var inner = {
 	backgroundColor: "#191919",
-	width: "80%",
+	width: "100%",
 	height: "100%",
 	position: "absolute"
 };
 var transform = {
-	left: "20%",
+	left: "-22%",
 	bottom: "0px",
-	transform: "skewX(20deg)",
+	transform: "skewX(-20deg)",
 	transformOrigin: "bottom left"
-};
-
-var triangleRight = {
-	position: "absolute",
-	top: 2,
-	left: "20%",
-	width: 0,
-	height: 0,
-	borderTop: "85px solid transparent",
-	borderRight: "172px solid #888",
-	borderBottom: "0px solid transparent"
 };
 
 exports.outer = outer;
 exports.inner = inner;
-exports.triangleRight = triangleRight;
 exports.transform = transform;

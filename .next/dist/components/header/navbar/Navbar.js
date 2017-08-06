@@ -27,49 +27,38 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\header\\navbar\\Navbar.js';
 
 
-var PostLink = function PostLink(_ref) {
-	var id = _ref.id,
-	    title = _ref.title;
-	return _react2.default.createElement(_link2.default, { href: '/post?id=' + id, __source: {
+var MenuItem = function MenuItem(_ref) {
+	var href = _ref.href,
+	    title = _ref.title,
+	    activeItem = _ref.activeItem;
+	return _react2.default.createElement(_semanticUiReact.Menu.Item, { name: title, size: 'large', active: activeItem === title, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 7
 		}
-	}, _react2.default.createElement(_semanticUiReact.Menu.Item, { name: title, __source: {
+	}, _react2.default.createElement(_link2.default, { href: href, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 8
 		}
-	}));
+	}, _react2.default.createElement(_semanticUiReact.Button, { basic: true, color: 'black', __source: {
+			fileName: _jsxFileName,
+			lineNumber: 9
+		}
+	}, title)));
 };
 
-var MenuItem = function MenuItem(_ref2) {
-	var href = _ref2.href,
-	    title = _ref2.title,
-	    activeItem = _ref2.activeItem;
-	return _react2.default.createElement(_link2.default, { href: href, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 14
-		}
-	}, _react2.default.createElement(_semanticUiReact.Menu.Item, { name: title, active: activeItem === title, __source: {
+var Navbar = function Navbar(_ref2) {
+	var activeLink = _ref2.activeLink,
+	    links = _ref2.links;
+	return _react2.default.createElement(_semanticUiReact.Menu, { borderless: true, style: styles.container, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 15
 		}
-	}, title));
-};
-
-var Navbar = function Navbar(_ref3) {
-	var activeItem = _ref3.activeItem;
-	return _react2.default.createElement(_semanticUiReact.Menu, { borderless: true, fluid: true, widths: 2, style: styles.container, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 22
-		}
-	}, _react2.default.createElement(MenuItem, { href: '/', title: 'home', activeItem: activeItem, __source: {
-			fileName: _jsxFileName,
-			lineNumber: 23
-		}
-	}), _react2.default.createElement(PostLink, { id: 'WYDchioAAHuWrCAF', title: 'Hello World', __source: {
-			fileName: _jsxFileName,
-			lineNumber: 24
-		}
+	}, links.map(function (link, index) {
+		return _react2.default.createElement(MenuItem, { href: link.url, key: index, title: link.title, activeItem: link.title == activeLink, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 18
+			}
+		});
 	}));
 };
 

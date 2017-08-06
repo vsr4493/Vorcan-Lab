@@ -9,26 +9,15 @@ const outer = {
 }
 const inner = {
 	backgroundColor: "#191919", 
-	width:"80%",
+	width:"100%",
 	height:"100%",
 	position:"absolute",
 }
 const transform = {
-	left:"20%",
+	left:"-22%",
 	bottom:"0px",
-	transform:"skewX(20deg)",
+	transform:"skewX(-20deg)",
 	transformOrigin: "bottom left",
 }
 
-const triangleRight = {
-	position:"absolute",
-	top:2,
-	left:"20%",
-	width: 0,
-	height: 0,
-	borderTop: "85px solid transparent",
-	borderRight: "172px solid #888",
-	borderBottom: "0px solid transparent"
-}
-
-export {outer, inner, triangleRight, transform};
+export {outer, inner, transform};
