@@ -27,11 +27,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\header\\Header.js';
+var _jsxFileName = '/home/vorcan/Vorcan/Vorcan.me/components/header/Header.js';
 
 
 var AppHeader = function AppHeader(props) {
-	return _react2.default.createElement(_semanticUiReact.Grid, { stretched: true, style: styles.container.grid, __source: {
+	return _react2.default.createElement(_semanticUiReact.Grid, { stretched: true, stackable: true, style: styles.container.grid, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 7
 		}
@@ -39,7 +39,7 @@ var AppHeader = function AppHeader(props) {
 			fileName: _jsxFileName,
 			lineNumber: 8
 		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 4, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { doubling: true, tablet: 6, computer: 4, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 9
 		}
@@ -47,7 +47,7 @@ var AppHeader = function AppHeader(props) {
 			fileName: _jsxFileName,
 			lineNumber: 10
 		}
-	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 12, __source: {
+	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { doubling: true, tablet: 10, computer: 12, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 12
 		}

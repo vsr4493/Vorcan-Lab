@@ -33,15 +33,13 @@ class AppLayout extends React.Component{
 					<meta name="viewport" content="initial-scale=1.0 width=device-width"/>
 					<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css"></link>
 				</Head>
-				<Container fluid style={styles.container}>
-					<AppHeader links={AppRoutes.links} toggleSidebar={this.toggleSidebar.bind(this)} activeLink={undefined}/>
-					<Sidebar.Pushable>
-						<AppSidebar visible={sidebarVisible}/>
-						<Sidebar.Pusher style={{minHeight:minHeight, display:showContent}}>
-							{this.props.children}
-						</Sidebar.Pusher>
-					</Sidebar.Pushable>
-				</Container>	
+				<AppHeader links={AppRoutes.links} toggleSidebar={this.toggleSidebar.bind(this)} activeLink={undefined}/>
+				<Sidebar.Pushable>
+					<AppSidebar visible={sidebarVisible}/>
+					<Sidebar.Pusher style={{minHeight:minHeight, display:showContent}}>
+						{this.props.children}
+					</Sidebar.Pusher>
+				</Sidebar.Pushable>
 			</div>
 		);
 	}

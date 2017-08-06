@@ -20,7 +20,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\header\\logo\\Logo.js';
+var _jsxFileName = '/home/vorcan/Vorcan/Vorcan.me/components/header/logo/Logo.js';
 
 
 var Logo = function Logo(_ref) {

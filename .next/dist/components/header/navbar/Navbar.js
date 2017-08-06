@@ -14,7 +14,7 @@ var _styles = require('./styles');
 
 var styles = _interopRequireWildcard(_styles);
 
-var _link = require('next\\dist\\lib\\link.js');
+var _link = require('next/dist/lib/link.js');
 
 var _link2 = _interopRequireDefault(_link);
 
@@ -24,7 +24,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\header\\navbar\\Navbar.js';
+var _jsxFileName = '/home/vorcan/Vorcan/Vorcan.me/components/header/navbar/Navbar.js';
 
 
 var MenuItem = function MenuItem(_ref) {

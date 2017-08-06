@@ -25,11 +25,11 @@ var _inherits2 = require('babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _link = require('next\\dist\\lib\\link.js');
+var _link = require('next/dist/lib/link.js');
 
 var _link2 = _interopRequireDefault(_link);
 
-var _head = require('next\\dist\\lib\\head.js');
+var _head = require('next/dist/lib/head.js');
 
 var _head2 = _interopRequireDefault(_head);
 
@@ -51,7 +51,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'E:\\Design Lab\\projects\\vorcan\\App\\components\\layout\\Layout.js';
+var _jsxFileName = '/home/vorcan/Vorcan/Vorcan.me/components/layout/Layout.js';
 
 
 var AppLayout = function (_React$Component) {
@@ -114,28 +114,24 @@ var AppLayout = function (_React$Component) {
 					fileName: _jsxFileName,
 					lineNumber: 34
 				}
-			})), _react2.default.createElement(_semanticUiReact.Container, { fluid: true, style: styles.container, __source: {
+			})), _react2.default.createElement(_index.AppHeader, { links: _index2.AppRoutes.links, toggleSidebar: this.toggleSidebar.bind(this), activeLink: undefined, __source: {
 					fileName: _jsxFileName,
 					lineNumber: 36
-				}
-			}, _react2.default.createElement(_index.AppHeader, { links: _index2.AppRoutes.links, toggleSidebar: this.toggleSidebar.bind(this), activeLink: undefined, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 37
 				}
 			}), _react2.default.createElement(_semanticUiReact.Sidebar.Pushable, {
 				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 38
+					lineNumber: 37
 				}
 			}, _react2.default.createElement(_index.AppSidebar, { visible: sidebarVisible, __source: {
 					fileName: _jsxFileName,
-					lineNumber: 39
+					lineNumber: 38
 				}
 			}), _react2.default.createElement(_semanticUiReact.Sidebar.Pusher, { style: { minHeight: minHeight, display: showContent }, __source: {
 					fileName: _jsxFileName,
-					lineNumber: 40
+					lineNumber: 39
 				}
-			}, this.props.children))));
+			}, this.props.children)));
 		}
 	}]);
 
