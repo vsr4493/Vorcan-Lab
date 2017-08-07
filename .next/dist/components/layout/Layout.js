@@ -127,7 +127,7 @@ var AppLayout = function (_React$Component) {
 					fileName: _jsxFileName,
 					lineNumber: 38
 				}
-			}, _react2.default.createElement(_index.AppSidebar, { visible: sidebarVisible, __source: {
+			}, _react2.default.createElement(_index.AppSidebar, { links: _index2.AppRoutes.sidebarLinks, visible: sidebarVisible, __source: {
 					fileName: _jsxFileName,
 					lineNumber: 39
 				}

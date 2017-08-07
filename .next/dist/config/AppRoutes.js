@@ -10,9 +10,15 @@ var AppRoutes = {
 	}, {
 		url: "/about",
 		title: "About"
+	}],
+	sidebarLinks: [{
+		url: "/",
+		title: "Home",
+		icon: "home"
 	}, {
-		url: "/blog",
-		title: "Blog"
+		url: "/about",
+		title: "About",
+		icon: "user"
 	}]
 };
 

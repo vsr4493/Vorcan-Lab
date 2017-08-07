@@ -1,19 +1,21 @@
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import Link from 'next/link';
 
-const AppSidebar = ({visible}) => (
+const AppSidebar = ({visible,links}) => (
   <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-    <Menu.Item name='home'>
-      <Icon name='home' />
-      Home
-    </Menu.Item>
-    <Menu.Item name='gamepad'>
-      <Icon name='gamepad' />
-      Games
-    </Menu.Item>
-    <Menu.Item name='camera'>
-      <Icon name='camera' />
-      Channels
-    </Menu.Item>
+    {
+      links.map((link,index) => (
+          <Menu.Item name={link.title} key={index}>
+            <Link href={link.url}>
+              <Button link basic inverted>
+                <Icon circular size="small" name={link.icon} />
+                {link.title}
+              </Button>  
+            </Link> 
+          </Menu.Item>
+        )
+      )
+    }
   </Sidebar>
 );
 

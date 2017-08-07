@@ -36,7 +36,7 @@ class AppLayout extends React.Component{
 				<Container fluid style={styles.container}>
 					<AppHeader links={AppRoutes.links} toggleSidebar={this.toggleSidebar.bind(this)} activeLink={undefined}/>
 					<Sidebar.Pushable>
-						<AppSidebar visible={sidebarVisible}/>
+						<AppSidebar links={AppRoutes.sidebarLinks} visible={sidebarVisible}/>
 						<Sidebar.Pusher style={{minHeight:minHeight, display:showContent}}>
 							{this.props.children}
 						</Sidebar.Pusher>
