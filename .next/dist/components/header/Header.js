@@ -35,11 +35,11 @@ var AppHeader = function AppHeader(props) {
 			fileName: _jsxFileName,
 			lineNumber: 7
 		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Row, { stretched: true, style: styles.container.row, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Grid.Row, { stretched: true, stackable: true, style: styles.container.row, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 8
 		}
-	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 4, __source: {
+	}, _react2.default.createElement(_semanticUiReact.Grid.Column, { tablet: 6, mobile: 12, computer: 4, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 9
 		}
@@ -47,7 +47,7 @@ var AppHeader = function AppHeader(props) {
 			fileName: _jsxFileName,
 			lineNumber: 10
 		}
-	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { width: 12, __source: {
+	})), _react2.default.createElement(_semanticUiReact.Grid.Column, { tablet: 10, mobile: 16, computer: 12, __source: {
 			fileName: _jsxFileName,
 			lineNumber: 12
 		}
