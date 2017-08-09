@@ -3,7 +3,8 @@ const container =  {
 	marginTop:0,
 	marginBottom:0
 }
+const sidebarSize = "250px" 
 
 
-export {container};
+export {container, sidebarSize};
 

@@ -1,4 +1,4 @@
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header} from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Divider} from 'semantic-ui-react';
 import Link from 'next/link';
 import Logo from './logo/Logo'; 
 import * as styles from './styles'; 
@@ -15,9 +15,12 @@ const MenuItem = ({link,activePage, setActivePage}) => (
 );
 
 
-const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage}) => (
-  <Sidebar as="div" animation='push' width='wide' visible={visible} style={styles.sidebar}>
-    <Menu icon='labeled' vertical inverted fluid style={styles.menu}>
+const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage, propStyle}) => (
+  <Sidebar as="div" 
+    animation='overlay' width='wide' visible={visible} 
+    style={Object.assign({},styles.sidebar,propStyle)}
+  >
+    <Menu  icon='labeled' vertical inverted fluid style={styles.menu}>
        <Menu.Item header>
         <Logo toggleSidebar={toggleSidebar}/>
        </Menu.Item>

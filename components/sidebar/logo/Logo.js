@@ -1,4 +1,4 @@
-import {Header,Icon,Button} from 'semantic-ui-react';
+import {Header,Icon,Button,Divider} from 'semantic-ui-react';
 import * as styles from './styles';
 import {Facade} from '../common/index'; 
 
@@ -6,10 +6,7 @@ const Logo = ({toggleSidebar}) => (
 	<div>
 	<Header as='h1' style={styles.container} >
 		<Header.Content>
-			//TODO: Use Facade responsibly...
-				<sup>
-					<Icon inverted name="content" />
-				</sup>
+			{/*TODO: Use Facade responsibly...*/}
 		</Header.Content>
 		<Header.Content style={{marginLeft:"10px"}}>
 				<sup>Vorcan's</sup>

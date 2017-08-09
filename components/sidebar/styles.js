@@ -1,5 +1,4 @@
 const sidebar = {
-	width:"250px",
 	borderRadius:"0"
 }
 

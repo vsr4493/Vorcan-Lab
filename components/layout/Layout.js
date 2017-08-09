@@ -34,10 +34,12 @@ class AppLayout extends React.Component{
 					<title>Vorcan's Lab</title>
 					<meta name="viewport" content="initial-scale=1.0 width=device-width"/>
 					<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css"></link>
+					<link rel="stylesheet" href="/static/style.css"></link>
 				</Head>
 				<Container fluid style={styles.container}>
 					<Sidebar.Pushable as="div">
-						<AppSidebar 
+						<AppSidebar
+							propStyle={{width: styles.sidebarSize}} 
 							links={AppRoutes.sidebarLinks} 
 							activePage={this.state.activePage} 
 							setActivePage={this.setActivePage.bind(this)} 
@@ -45,7 +47,9 @@ class AppLayout extends React.Component{
 							visible={sidebarVisible}
 						/>
 						<Sidebar.Pusher style={{minHeight:"100vh", display:showContent}}>
-							{this.props.children}
+							<div style={{marginLeft:styles.sidebarSize}}>
+								{this.props.children}
+							</div>
 						</Sidebar.Pusher>
 					</Sidebar.Pushable>
 				</Container>	
