@@ -1,21 +1,30 @@
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header} from 'semantic-ui-react';
 import Link from 'next/link';
+import Logo from './logo/Logo'; 
+import * as styles from './styles'; 
 
-const AppSidebar = ({visible,links}) => (
-  <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-    {
-      links.map((link,index) => (
-          <Menu.Item name={link.title} key={index}>
-            <Link href={link.url}>
-              <Button link basic inverted>
-                <Icon circular size="small" name={link.icon} />
-                {link.title}
-              </Button>  
-            </Link> 
-          </Menu.Item>
-        )
-      )
-    }
+const MenuItem = ({link,activePage, setActivePage}) => (
+    <Menu.Item name={link.title} size="large" active={activePage === link.title}>
+      <Link href={link.url} onClick={() => setActivePage(link.title)}>
+        <Button size="large" color="black" inverted >
+          <Icon circular size="large" inverted name={link.icon} color="black"/>
+          {link.title}
+        </Button>
+      </Link>
+    </Menu.Item>
+);
+
+
+const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage}) => (
+  <Sidebar as="div" animation='push' width='wide' visible={visible} style={styles.sidebar}>
+    <Menu icon='labeled' vertical inverted fluid style={styles.menu}>
+       <Menu.Item header>
+        <Logo toggleSidebar={toggleSidebar}/>
+       </Menu.Item>
+      {
+        links.map((link,index) => <MenuItem link={link} setActivePage={setActivePage} activePage={activePage}/>)
+      }
+    </Menu>
   </Sidebar>
 );
 
