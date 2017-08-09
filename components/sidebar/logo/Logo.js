@@ -5,9 +5,6 @@ import {Facade} from '../common/index';
 const Logo = ({toggleSidebar}) => (
 	<div>
 	<Header as='h1' style={styles.container} >
-		<Header.Content>
-			{/*TODO: Use Facade responsibly...*/}
-		</Header.Content>
 		<Header.Content style={{marginLeft:"10px"}}>
 				<sup>Vorcan's</sup>
 				<sub>Lab</sub>

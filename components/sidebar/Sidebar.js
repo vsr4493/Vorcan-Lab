@@ -1,6 +1,7 @@
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Divider} from 'semantic-ui-react';
 import Link from 'next/link';
 import Logo from './logo/Logo'; 
+import {Facade} from './common/index';
 import * as styles from './styles'; 
 
 const MenuItem = ({link,activePage, setActivePage}) => (
@@ -21,6 +22,7 @@ const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage, prop
     style={Object.assign({},styles.sidebar,propStyle)}
   >
     <Menu  icon='labeled' vertical inverted fluid style={styles.menu}>
+      <Facade />
        <Menu.Item header>
         <Logo toggleSidebar={toggleSidebar}/>
        </Menu.Item>

@@ -8,16 +8,12 @@ const outer = {
 	overflow:"hidden",
 }
 const inner = {
-	backgroundColor: "#191919", 
-	width:"100%",
+	backgroundColor: "#555", 
 	height:"100%",
 	position:"absolute",
-}
-const transform = {
-	left:"-22%",
-	bottom:"0px",
-	transform:"skewX(-20deg)",
+	bottom:"0%",
+	transform:"skewX(20deg)",
 	transformOrigin: "bottom left",
 }
 
-export {outer, inner, transform};
+export {outer, inner};
