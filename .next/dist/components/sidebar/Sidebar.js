@@ -50,11 +50,11 @@ var MenuItem = function MenuItem(_ref) {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, _react2.default.createElement(_semanticUiReact.Button, { size: 'large', color: 'black', inverted: true, __source: {
+  }, _react2.default.createElement(_semanticUiReact.Button, { basic: true, inverted: true, size: 'large', color: 'white', __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     }
-  }, _react2.default.createElement(_semanticUiReact.Icon, { circular: true, size: 'large', inverted: true, name: link.icon, color: 'black', __source: {
+  }, _react2.default.createElement(_semanticUiReact.Icon, { circular: true, size: 'large', inverted: true, name: link.icon, color: 'teal', __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     }

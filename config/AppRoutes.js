@@ -1,14 +1,4 @@
 const AppRoutes = {
-	links: [
-		{
-			url: "/",
-			title: "Home"
-		},
-		{
-			url: "/about",
-			title: "About"
-		}
-	],
 	sidebarLinks: [
 		{
 			url: "/",

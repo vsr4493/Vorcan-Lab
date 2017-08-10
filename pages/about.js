@@ -11,7 +11,7 @@ const InfoCard = () => (
 				is still wondering what to write here..
 			</Card.Meta>
 			<Card.Description>
-				Scala/Java/Javascript developer by day, much the same by night.<br/> Currently obsessed with functional programming!
+				Scala/Java/Javascript developer by day, much the same by night.<br/> 
 			</Card.Description>
 		</Card.Content>
 	</Card>

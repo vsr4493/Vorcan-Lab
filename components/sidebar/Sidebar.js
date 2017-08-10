@@ -7,8 +7,8 @@ import * as styles from './styles';
 const MenuItem = ({link,activePage, setActivePage}) => (
     <Menu.Item name={link.title} size="large" active={activePage === link.title}>
       <Link href={link.url} onClick={() => setActivePage(link.title)}>
-        <Button size="large" color="black" inverted >
-          <Icon circular size="large" inverted name={link.icon} color="black"/>
+        <Button basic inverted size="large" color="white" >
+          <Icon circular size="large" inverted name={link.icon} color="teal"/>
           {link.title}
         </Button>
       </Link>

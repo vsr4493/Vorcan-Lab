@@ -8,7 +8,7 @@ const outer = {
 	overflow:"hidden",
 }
 const inner = {
-	backgroundColor: "#555", 
+	backgroundColor: "rgb(45,45,45)", 
 	height:"100%",
 	position:"absolute",
 	bottom:"0%",
