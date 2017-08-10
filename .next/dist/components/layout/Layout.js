@@ -63,7 +63,7 @@ var AppLayout = function (_React$Component) {
 		var _this = (0, _possibleConstructorReturn3.default)(this, (AppLayout.__proto__ || (0, _getPrototypeOf2.default)(AppLayout)).call(this, props));
 
 		_this.state = {
-			sidebarVisible: false,
+			sidebarVisible: true,
 			contentVisible: false
 		};
 		return _this;
@@ -73,7 +73,6 @@ var AppLayout = function (_React$Component) {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			this.setState({
-				minHeight: window.innerHeight - 60 + 'px',
 				contentVisible: true
 			});
 		}
@@ -81,6 +80,11 @@ var AppLayout = function (_React$Component) {
 		key: 'toggleSidebar',
 		value: function toggleSidebar() {
 			this.setState({ sidebarVisible: !this.state.sidebarVisible });
+		}
+	}, {
+		key: 'setActivePage',
+		value: function setActivePage(page) {
+			this.setState({ activePage: page });
 		}
 	}, {
 		key: 'render',
@@ -94,44 +98,58 @@ var AppLayout = function (_React$Component) {
 			return _react2.default.createElement('div', {
 				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 30
+					lineNumber: 32
 				}
 			}, _react2.default.createElement(_head2.default, {
 				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 31
+					lineNumber: 33
 				}
 			}, _react2.default.createElement('title', {
 				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 32
+					lineNumber: 34
 				}
 			}, 'Vorcan\'s Lab'), _react2.default.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0 width=device-width', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 33
+					lineNumber: 35
 				}
 			}), _react2.default.createElement('link', { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 34
-				}
-			})), _react2.default.createElement(_index.AppHeader, { links: _index2.AppRoutes.links, toggleSidebar: this.toggleSidebar.bind(this), activeLink: undefined, __source: {
-					fileName: _jsxFileName,
 					lineNumber: 36
 				}
-			}), _react2.default.createElement(_semanticUiReact.Sidebar.Pushable, {
-				__source: {
+			}), _react2.default.createElement('link', { rel: 'stylesheet', href: '/static/style.css', __source: {
 					fileName: _jsxFileName,
 					lineNumber: 37
 				}
-			}, _react2.default.createElement(_index.AppSidebar, { visible: sidebarVisible, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 38
-				}
-			}), _react2.default.createElement(_semanticUiReact.Sidebar.Pusher, { style: { minHeight: minHeight, display: showContent }, __source: {
+			})), _react2.default.createElement(_semanticUiReact.Container, { fluid: true, style: styles.container, __source: {
 					fileName: _jsxFileName,
 					lineNumber: 39
 				}
-			}, this.props.children)));
+			}, _react2.default.createElement(_semanticUiReact.Sidebar.Pushable, { as: 'div', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 40
+				}
+			}, _react2.default.createElement(_index.AppSidebar, {
+				propStyle: { width: styles.sidebarSize },
+				links: _index2.AppRoutes.sidebarLinks,
+				activePage: this.state.activePage,
+				setActivePage: this.setActivePage.bind(this),
+				toggleSidebar: this.toggleSidebar.bind(this),
+				visible: sidebarVisible,
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 41
+				}
+			}), _react2.default.createElement(_semanticUiReact.Sidebar.Pusher, { style: { minHeight: "100vh", display: showContent }, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 49
+				}
+			}, _react2.default.createElement('div', { style: { marginLeft: styles.sidebarSize }, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 50
+				}
+			}, this.props.children)))));
 		}
 	}]);
 
