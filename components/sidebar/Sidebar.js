@@ -1,19 +1,35 @@
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Divider} from 'semantic-ui-react';
+import Link from 'next/link';
+import Logo from './logo/Logo'; 
+import {Facade} from './common/index';
+import * as styles from './styles'; 
 
-const AppSidebar = ({visible}) => (
-  <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
-    <Menu.Item name='home'>
-      <Icon name='home' />
-      Home
+const MenuItem = ({link,activePage, setActivePage}) => (
+    <Menu.Item name={link.title} size="large" active={activePage === link.title}>
+      <Link href={link.url} onClick={() => setActivePage(link.title)}>
+        <Button size="large" color="black" inverted >
+          <Icon circular size="large" inverted name={link.icon} color="black"/>
+          {link.title}
+        </Button>
+      </Link>
     </Menu.Item>
-    <Menu.Item name='gamepad'>
-      <Icon name='gamepad' />
-      Games
-    </Menu.Item>
-    <Menu.Item name='camera'>
-      <Icon name='camera' />
-      Channels
-    </Menu.Item>
+);
+
+
+const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage, propStyle}) => (
+  <Sidebar as="div" 
+    animation='overlay' width='wide' visible={visible} 
+    style={Object.assign({},styles.sidebar,propStyle)}
+  >
+    <Menu  icon='labeled' vertical inverted fluid style={styles.menu}>
+      <Facade />
+       <Menu.Item header>
+        <Logo toggleSidebar={toggleSidebar}/>
+       </Menu.Item>
+      {
+        links.map((link,index) => <MenuItem link={link} setActivePage={setActivePage} activePage={activePage}/>)
+      }
+    </Menu>
   </Sidebar>
 );
 

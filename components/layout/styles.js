@@ -1,5 +1,10 @@
 const container =  {
-	height:"100%"
+	backgroundColor: "#ecf0f1",
+	marginTop:0,
+	marginBottom:0
 }
+const sidebarSize = "250px" 
 
-export {container};
+
+export {container, sidebarSize};
+
