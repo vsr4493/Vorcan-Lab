@@ -1,18 +1,18 @@
-import {Divider, Header, Rail, Container, Segment, Label,Icon, Grid} from 'semantic-ui-react';
+import {Divider, Header, Rail,Button, Container, Segment, Label,Icon, Grid} from 'semantic-ui-react';
 import Link from 'next/link';
 import * as styles from './styles';
 
-const PostLink = ({link}) => {
+const PostLink = ({link, renderPost}) => {
 	return (
 		<Grid centered columns={1}>
-		  <Grid.Column>
+		  <Grid.Column width={12}>
 		   	<Segment style={styles.postLink}>
 					<Label color='blue' size="mini" ribbon>{link.addedOn}</Label>
-					<Header as="h1">
+					<Header as="h2" style={{marginLeft:"20px"}}>
 						<Header.Content>
-							<Link href={`\post?id=${link.postID}`} onClick={() => setActivePage(link.title)}>
+							<a style={{cursor:"pointer"}} onClick={() => renderPost(link.id)}>
 								{link.header}
-							</Link>
+							</a>
 						</Header.Content>
 						<Header.Subheader>
 							{link.subHeader}
@@ -24,10 +24,10 @@ const PostLink = ({link}) => {
 	);
 }
 
-const Home = ({links}) => {
+const Home = ({links,renderPost}) => {
 	return (
 		<Container style={styles.container}>
-			{links.map(link => <PostLink link={link} />)}
+			{links.map((link,index) => <PostLink key={index} link={link} renderPost={renderPost} />)}
 		</Container>
 	);
 }

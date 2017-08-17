@@ -1,9 +1,9 @@
 const container =  {
-	backgroundColor: "#ecf0f1",
+	backgroundColor: "#ECECEC",
 	marginTop:0,
 	marginBottom:0
 }
-const sidebarSize = "250px" 
+const sidebarSize = "200px" 
 
 
 export {container, sidebarSize};

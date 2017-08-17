@@ -1,5 +1,4 @@
 const container = {
-	backgroundColor: "#E0E0E0",
 	minHeight:"100vh",
 	padding:"20px 40px"
 };

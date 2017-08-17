@@ -5,11 +5,11 @@ const sidebar = {
 const menu =  {
 	minHeight:"100%",
 	borderRadius:"0",
-	backgroundColor:"#263238"
+	backgroundColor:"#823030"
 }
 
 const menuItem = {
-	backgroundColor:"#0097A7",
+	backgroundColor:"#FEFAE0",
 }
 
 export {menu, sidebar, menuItem};
