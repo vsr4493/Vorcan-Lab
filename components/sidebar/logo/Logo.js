@@ -7,7 +7,7 @@ const Logo = ({toggleSidebar}) => (
 	<Header as='h1' style={styles.container} >
 		<Header.Content style={{marginLeft:"10px"}}>
 				<sup>Vorcan's</sup>
-				<sub>Lab</sub>
+				<sub>Nest</sub>
 		</Header.Content>
 	</Header>
 	</div>
