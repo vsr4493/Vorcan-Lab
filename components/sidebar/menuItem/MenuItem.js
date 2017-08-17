@@ -17,7 +17,8 @@ const MenuItem = ({link,activePage, setActivePage}) => (
       	.ui.basic.button:hover{
       	 	background-color:#ECECEC !important;	
       	}
-      	.ui.basic.button:hover .ui.sub.header{
+      	.ui.basic.button:hover .ui.sub.header,.ui.basic.button:active .ui.sub.header
+        ,.ui.basic.button:focus .ui.sub.header{
       		color:#823030; 
       	}
       	.ui.basic.button .ui.sub.header{
