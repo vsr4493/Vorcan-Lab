@@ -1,11 +1,16 @@
 const sidebar = {
-	borderRadius:"0"
+	borderRadius:"0",
 }
 
 const menu =  {
 	minHeight:"100%",
 	borderRadius:"0",
+	backgroundColor:"#823030"
 }
 
-export {menu, sidebar};
+const menuItem = {
+	backgroundColor:"#FEFAE0",
+}
+
+export {menu, sidebar, menuItem};
 

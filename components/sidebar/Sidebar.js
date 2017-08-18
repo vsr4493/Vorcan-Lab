@@ -1,19 +1,8 @@
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Divider} from 'semantic-ui-react';
-import Link from 'next/link';
+import { Sidebar, Segment, Menu} from 'semantic-ui-react';
 import Logo from './logo/Logo'; 
+import MenuItem from './menuItem/MenuItem';
 import {Facade} from './common/index';
-import * as styles from './styles'; 
-
-const MenuItem = ({link,activePage, setActivePage}) => (
-    <Menu.Item name={link.title} size="large" active={activePage === link.title}>
-      <Link href={link.url} onClick={() => setActivePage(link.title)}>
-        <Button size="large" color="black" inverted >
-          <Icon circular size="large" inverted name={link.icon} color="black"/>
-          {link.title}
-        </Button>
-      </Link>
-    </Menu.Item>
-);
+import * as styles from './styles';
 
 
 const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage, propStyle}) => (
@@ -27,7 +16,8 @@ const AppSidebar = ({visible,links,toggleSidebar,activePage, setActivePage, prop
         <Logo toggleSidebar={toggleSidebar}/>
        </Menu.Item>
       {
-        links.map((link,index) => <MenuItem link={link} setActivePage={setActivePage} activePage={activePage}/>)
+        links.map((link,index) => 
+          <MenuItem key={index} link={link} setActivePage={setActivePage} activePage={activePage}/>)
       }
     </Menu>
   </Sidebar>
